@@ -38,7 +38,7 @@ select major_name from major ;
 update student set grade = 3 where student_id = 1 ;
 delete from student where student_id = 10 ;
 
--- 演習
+-- 発展
 
 1
 create database axiz_exam_dev;
