@@ -76,3 +76,23 @@ where amount < 5000 ;
 select * from sales
 where amount >=5000 ;
 
+8
+select sales_id,order_data,customer_id , amount * 1.1 
+from sales ;
+
+9
+select * from sales
+where amount is not null ;
+
+10
+select * from customer
+where customer_name <> '田中' ;
+
+11
+update sales
+set  order_data = '2018/11/05' , customer_id = 4
+where sales_id = 4 ;
+
+12
+delete from sales
+ where amount is null ;
