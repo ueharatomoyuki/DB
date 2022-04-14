@@ -51,3 +51,13 @@ where  s.major_id in (select major_id
             having count(major_id) >= 3)
 order by major_id , student_id
 ;            
+
+-- 発展
+
+1
+create table sales_old(
+    sales_id int primary key 
+    , order_data date 
+    , customer_id int not null references customer 
+    , amount decimal 
+) ;

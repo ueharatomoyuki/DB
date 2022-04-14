@@ -37,6 +37,42 @@ select * from student where hometown = '東京' ;
 select major_name from major ;
 update student set grade = 3 where student_id = 1 ;
 delete from student where student_id = 10 ;
-      
 
+-- 演習
+
+1
+create database axiz_exam_dev;
+
+2
+create table customer (
+  customer_id int primary key
+  , customer_name varchar(50)   
+);
+
+3
+create table sales (
+    sales_id int primary key
+    , order_data date 
+    , customer_id int not null references customer
+    , amount decimal
+);
+
+4
+insert into customer
+(customer_id,customer_name)
+values(1,'田中'),(2,'鈴木'),(3,'田中'),(4,'田島') ;
+
+5
+insert into sales
+(sales_id,order_data,customer_id,amount)
+values(1,'2018/11/01',1,3000),(2,'2018/10/01',3,5000),(3,'2018/10/01',4,6000)
+    , (4,'2018/11/02',2,2000),(5,'2018/11/15',2,null) ;
+
+6
+select * from sales
+where amount < 5000 ;
+
+7
+select * from sales
+where amount >=5000 ;
 
