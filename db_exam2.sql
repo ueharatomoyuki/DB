@@ -61,3 +61,13 @@ create table sales_old(
     , customer_id int not null references customer 
     , amount decimal 
 ) ;
+
+2
+insert into sales_old
+(sales_id,order_data,customer_id,amount)
+values(6,'2018/09/02',2,20000)
+     ,(7,'2018/09/01',1,5000)
+     ,(8,'2018/09/02',3,6000)
+     ,(9,'2018/09/05',1,300);
+
+3
