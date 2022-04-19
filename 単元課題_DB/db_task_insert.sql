@@ -28,6 +28,18 @@ values
 (1,1,1,'2022/4/1',1,001,1)
 
 insert into obj_p
-(resi_id, obj_id, kosu, kin, wari)
+(resi_id, obj_id, kosu, wari)
 values
-(1,1,1,100,-10)
+(1,3,1,0),
+(1,4,1,0)
+
+insert into obj_8p
+(resi_id, obj_id, kosu, wari)
+values
+(1,1,1,10),
+(1,2,1,0)
+
+
+
+
+
